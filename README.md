@@ -1,11 +1,11 @@
-# nodexbt-ui
+# zero-ui
 
-Shared styling primitives for nodexbt projects — theme tokens, Tailwind v4 preset, `cn()` utility, and `ThemeProvider`.
+Shared styling primitives — theme tokens, Tailwind v4 preset, `cn()` utility, and `ThemeProvider`.
 
 ## Install
 
 ```bash
-npm install nodexbt-ui
+npm install zero-ui
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install nodexbt-ui
 In your app's main CSS file, replace your theme tokens with:
 
 ```css
-@import "nodexbt-ui/globals.css";
+@import "zero-ui/globals.css";
 ```
 
 This gives you the full Tailwind v4 `@theme inline` block, light/dark CSS variables, and base styles.
@@ -23,7 +23,7 @@ This gives you the full Tailwind v4 `@theme inline` block, light/dark CSS variab
 ### 2. Use the utilities
 
 ```tsx
-import { cn, ThemeProvider, useTheme } from "nodexbt-ui";
+import { cn, ThemeProvider, useTheme } from "zero-ui";
 ```
 
 **`cn(...classes)`** — merges Tailwind classes safely (clsx + tailwind-merge):
@@ -36,7 +36,7 @@ import { cn, ThemeProvider, useTheme } from "nodexbt-ui";
 
 ```tsx
 // layout.tsx
-import { ThemeProvider } from "nodexbt-ui";
+import { ThemeProvider } from "zero-ui";
 
 export default function RootLayout({ children }) {
   return (
@@ -59,7 +59,7 @@ const { theme, setTheme } = useTheme();
 
 ```js
 // postcss.config.mjs
-import { postcssConfig } from "nodexbt-ui/postcss";
+import { postcssConfig } from "zero-ui/postcss";
 export default postcssConfig;
 ```
 
